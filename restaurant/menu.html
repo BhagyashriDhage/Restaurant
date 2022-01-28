@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+:root{
+    --main-color:hsl(0, 95%, 59%);
+    --black:#13131a;
+    --bg:#010103;
+    --border:.2rem solid rgba(255, 248, 248, 0.966);
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+}
+
+.header .logo img{
+    height: 4rem;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:#fff;
+    text-align: right;
+    margin-right: 0.5rem;
+    z-index: 1;
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+.main{
+
+ margin: 3%;
+ margin-top: 8%;
+}
+
+.card{
+     width: 30%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin:1.5%;
+    
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 30px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  width: 160px;
+  height: 50px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+</style>
+<body>
+   <header class="header">
+
+      <a href="#" class="logo">
+          <img src="img/logo.png" alt="">
+      </a>
+  
+      <nav class="navbar">
+          <a href="index.html">HOME</a>
+          <a href="gal.html">GALLERY</a>
+         
+        
+          <a href="menu.html"> MENU</a>
+          <a href="about.html">ABOUT</a>
+          <a href="feedback.html">FEEDBACK</a>
+         
+      </nav>
+  </header>
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="img/v1.jfif">
+</div>
+<div class="title">
+ <h1>VEGETARIAN
+</h1>
+</div>
+<div class="des">
+  <h2>choose your Fevourite one...</h2>
+<button><a href="m2.html">Read More...</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="img/n.jpg">
+</div>
+<div class="title">
+ <h1>
+NON-VEGETARIAN</h1>
+</div>
+<div class="des">
+ <h2>choose your Fevourite one...</h2>
+<button><a href="m1.html">Read More...</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="img/des.jfif">
+</div>
+<div class="title">
+ <h1>
+DESSERTS</h1>
+</div>
+<div class="des">
+  <h2>choose your Fevourite one...</h2>
+<button><a href="m3.html">Read More...</a></button>
+</div>
+</div>
+<!--cards -->
+
+
+
+
+
+</div>
+</body>
+</html>

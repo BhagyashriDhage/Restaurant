@@ -1,0 +1,52 @@
+:root{
+    --main-color:hsl(0, 95%, 59%);
+    --black:#13131a;
+    --bg:#010103;
+    --border:.2rem solid rgba(255, 248, 248, 0.966);
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+}
+
+.header .logo img{
+    height: 4rem;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../img/home.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:#fff;
+    text-align: right;
+    margin-right: 0.5rem;
+    z-index: 1;
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.home .content{
+   
+    max-width: 150rem;
+}
+.home .content h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+   
+}

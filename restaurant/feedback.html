@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<style>
+  :root{
+    --main-color:hsl(0, 95%, 59%);
+    --black:#13131a;
+    --bg:#010103;
+    --border:.2rem solid rgba(255, 248, 248, 0.966);
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:#fff;
+    text-align: right;
+    margin-right: 0.5rem;
+    z-index: 1;
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.header .logo img{
+    height: 4rem;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 50px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 50px;
+  width: 100%;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #090a09;
+  color: white;
+  padding: 14px 25px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #011014;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #ee4a18;
+  padding: 120px;
+}
+
+</style>
+<body>
+  <header class="header">
+
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="gal.html">GALLERY</a>
+        <a href="menu.html"> MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="feedback.html">FEEDBACK</a>
+       
+    </nav>
+</header>
+
+
+<div>
+  <form>
+    <h2 align="center" >FEED BACK FORM</h2>
+
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email Id</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Email Id..">
+    Gender <br>
+    <input type="radio" name="gender"> Male  <input type="radio" name="gender"> Female
+<br>
+<br>
+  <label for="MobileNo">Mobile No</label>
+    <input type="text" id="mobno" name="mobno" placeholder="Your Mobile No..">
+    <label for="feed">Feed Back</label>
+    <textarea id="feed" rows="6" cols="160"name="feed" placeholder="Your FeedBack.."></textarea>
+    <input type="checkbox" id="myCheck">send me copy
+   <br>
+    <input type="submit" value="Submit" id="submit">&nbsp;&nbsp; <input type="submit" value="Cancel" id="cancel">
+  </form>
+</div>
+
+</body>
+</html>
+
+
